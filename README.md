@@ -18,8 +18,10 @@ Como uma estudante autodidata de programação recém-formada no ensino médio, 
 <h3>I'm currently learning:</h3>
 <img src="https://skillicons.dev/icons?i=html,css,js">
 
+<!-- 
 <h3>To explore further:</h3>
-<img src="https://skillicons.dev/icons?i=raspberrypi,linux">
+<img src="https://skillicons.dev/icons?i=raspberrypi,linux"> 
+-->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/leticiallsousa/leticiallsousa/output/github-snake-dark.svg" />
