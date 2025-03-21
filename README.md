@@ -7,7 +7,7 @@
 
 #
 
-<img align="right" width=400px alt="Cute Computer" src="https://i.pinimg.com/originals/57/18/5d/57185d2176d7cbaebdb74c00ce1b9ebf.gif">
+<img align="right" width=350px alt="Cute Computer" src="https://i.pinimg.com/originals/57/18/5d/57185d2176d7cbaebdb74c00ce1b9ebf.gif">
 
 <h3>About me:</h3>
 Como uma estudante autodidata de programação recém-formada no ensino médio, já pude explorar diversas tecnologias, como Python, HTML, CSS, Javascript e SQL. Desde cedo, a tecnologia sempre me fascinou, não apenas como uma ferramenta, mas como um meio para solucionar problemas reais; e é com isso em mente que tenho iniciado diversos projetos, que em breve estarão disponíveis aqui, onde pretendo compartilhar mais do meu aprendizado e evolução.
