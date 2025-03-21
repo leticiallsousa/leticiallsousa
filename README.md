@@ -5,14 +5,14 @@
 
 #
 
-## About me
+<h3>About me:</h3>
 <p>Estudante autodidata de programação, recém-formada no ensino médio, busco um cargo de Jovem Aprendiz na área de Desenvolvimento de Software. Desde cedo, a tecnologia me fascinou, não apenas como uma ferramenta, mas como um meio para solucionar problemas reais; e é com isso em mente que tenho iniciado diversos projetos, que em breve estarão disponíveis por aqui, onde pretendo compartilhar mais do meu aprendizado e evolução.</p>
 
-## I'm currently learning:
-<img src="https://skillicons.dev/icons?i=html, css, js">
+<h3>I'm currently learning:</h3>
+<img src="https://skillicons.dev/icons?i=html,css,js">
 
-## My toolkit:
-<img src="https://skillicons.dev/icons?i=py, figma, ps, notion">
+<h3>My toolkit:</h3>
+<img src="https://skillicons.dev/icons?i=py,figma,ps,notion">
 
 #
 
