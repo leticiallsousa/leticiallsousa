@@ -6,7 +6,7 @@
 
 #
 
-<p align="center">Estudante autodidata de programação, recém-formada no ensino médio, busco um cargo de Jovem Aprendiz na área de Desenvolvimento de Software. Nessa jornada de estudos, já pude explorar diversas tecnologias, como Data Science, Python, SQL, HTML, CSS e JavaScript. Desde cedo, a tecnologia me fascinou, não apenas como uma ferramenta, mas como um meio para solucionar problemas reais; e é com isso em mente que tenho iniciado diversos projetos, que em breve estarão disponíveis por aqui. Pretendo compartilhar mais do meu aprendizado e evolução.</p>
+<p align="center">Estudante autodidata de programação, recém-formada no ensino médio, busco um cargo de Jovem Aprendiz na área de Desenvolvimento de Software. Desde cedo, a tecnologia me fascinou, não apenas como uma ferramenta, mas como um meio para solucionar problemas reais; e é com isso em mente que tenho iniciado diversos projetos, que em breve estarão disponíveis por aqui. Pretendo compartilhar mais do meu aprendizado e evolução.</p>
 
 #
 
