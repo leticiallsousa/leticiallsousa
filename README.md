@@ -3,13 +3,13 @@
   <img src="https://readme-typing-svg.demolab.com?font=Mona+Sans&weight=700&size=25&pause=1000&color=FFFFFF&vCenter=true&width=435&lines=Hello+World%2C+I'm+Leticia.;Welcome+to+my+profile!" alt="Hello World, I'm Letícia. Welcome to my profile!">
 </a>
 
-<h3>About me:</h3>
-<p>Estudante autodidata de programação, recém-formada no ensino médio, busco um cargo de Jovem Aprendiz na área de Desenvolvimento de Software. Desde cedo, a tecnologia me fascinou, não apenas como uma ferramenta, mas como um meio para solucionar problemas reais; e é com isso em mente que tenho iniciado diversos projetos, que em breve estarão disponíveis por aqui, onde pretendo compartilhar mais do meu aprendizado e evolução.</p>
+<h4>About me:</h4>
+<p>Sou uma estudante autodidata de programação, recém-formada no ensino médio, e busco um cargo na área de Desenvolvimento de Software enquanto me preparo para a faculdade. Desde cedo, a tecnologia sempre me fascinou, não apenas como uma ferramenta, mas como um meio para solucionar problemas reais; e é com isso em mente que tenho iniciado diversos projetos, que em breve estarão disponíveis por aqui, onde pretendo compartilhar mais do meu aprendizado e evolução.</p>
 
-<h3>I'm currently learning:</h3>
+<h5>I'm currently learning:</h5>
 <img src="https://skillicons.dev/icons?i=html,css,js">
 
-<h3>My toolkit:</h3>
+<h6>My toolkit:</h6>
 <img src="https://skillicons.dev/icons?i=py,figma,notion">
 
 <picture>
