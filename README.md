@@ -10,9 +10,10 @@
 <img align="right" width=350px alt="Cute Computer" src="https://i.pinimg.com/originals/57/18/5d/57185d2176d7cbaebdb74c00ce1b9ebf.gif">
 
 <h3>About me:</h3>
-Como uma estudante autodidata de programação recém-formada no ensino médio, já pude explorar diversas tecnologias, como Python, HTML, CSS, Javascript e SQL. Desde cedo, a tecnologia sempre me fascinou, não apenas como uma ferramenta, mas como um meio para solucionar problemas reais; e é com isso em mente que tenho iniciado diversos projetos, que em breve estarão disponíveis aqui, onde pretendo compartilhar mais do meu aprendizado e evolução.
+Computer Engineering student and self-taught programmer. I've been building things since I was 13 — from a Discord bot that led me to publish my own Python library on PyPI, to a quarterfinalist app at Technovation Girls, to IT support work at Experian.<br><br>
+Currently reworking old projects and starting new ones. More coming soon.
 
-<h3>My toolkit include:</h3>
+<h3>Toolkit:</h3>
 <img src="https://skillicons.dev/icons?i=py,figma,notion">
 
 <h3>I'm currently learning:</h3>
