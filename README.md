@@ -1,7 +1,7 @@
 <div align="center" style="display: flex; align-items: center;">
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Mona+Sans&weight=700&size=25&pause=1000&color=FFFFFF&vCenter=true&width=285&height=30&lines=Hello+World%2C+I'm+Leticia.;Welcome+to+my+profile!" alt="Hello World, I'm Letícia. Welcome to my profile!" style="margin-left: 20px;">
+    <img src="https://readme-typing-svg.demolab.com?font=Mona+Sans&weight=700&size=25&pause=1000&color=FFFFFF&vCenter=true&width=285&height=30&lines=Hello+World%2C+I'm+Leticia.;Welcome+to+my+profile!" alt="Hello World. Welcome to my profile!" style="margin-left: 20px;">
   </a>
 </div>
 
@@ -15,9 +15,6 @@ Currently reworking old projects and starting new ones. More coming soon.
 
 <h3>Toolkit:</h3>
 <img src="https://skillicons.dev/icons?i=py,figma,notion">
-
-<h3>I'm currently learning:</h3>
-<img src="https://skillicons.dev/icons?i=html,css,js">
 
 <!-- 
 <h3>To explore further:</h3>
