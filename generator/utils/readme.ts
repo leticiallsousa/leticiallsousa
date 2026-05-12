@@ -7,7 +7,6 @@ import { outdent } from 'outdent';
 import path from 'pathe';
 import sharp from 'sharp';
 import { monorepoDirpath } from './paths.ts';
-// @ts-expect-error: bad typings
 import { convert2img } from 'mdimg';
 
 export async function generateReadmeMarkdownFile({
@@ -44,7 +43,13 @@ export async function generateReadmeMarkdownFile({
 	const getImgWidth = (width: number) => `${(width / imageWidth) * 100}%`;
 
 	const readmeFooter = outdent({ trimLeadingNewline: false })`
-		###### 👆 The above image is interactive! Try clicking on the tabs :)
+		###### The above image is interactive! Try clicking on the tabs
+
+		<picture>
+		  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/leticiallsousa/leticiallsousa/output/github-snake-dark.svg" />
+		  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/leticiallsousa/leticiallsousa/output/github-snake.svg" />
+		  <img alt="github-snake" src="https://raw.githubusercontent.com/leticiallsousa/leticiallsousa/output/github-snake.svg" />
+		</picture>
 	`;
 
 	const readme = zip(lightModeImagePieces, darkModeImagePieces).map(
@@ -87,13 +92,14 @@ export async function convertReadmeMdToImage({
 	imageHeight: number;
 	theme: 'light' | 'dark';
 }) {
-	const img = await convert2img({
-		mdFile: path.join(monorepoDirpath, '../README.md'),
-		outputFilename: await os.tmpdir(),
-		width: imageWidth,
-		height: imageHeight,
-		cssTemplate: theme === 'light' ? 'github' : 'githubdark',
-	});
+const img = await convert2img({
+    mdFile: path.join(monorepoDirpath, '../README.md'),
+    outputFilename: await os.tmpdir(),
+    width: imageWidth,
+    height: imageHeight,
+    cssTemplate: theme === 'light' ? 'light.css' : 'dark.css',
+    extensions: true, // Ajusta para um valor booleano compatível com IExtensionOptions
+});
 
 	const imgHash = await hash(img.data);
 	const image = sharp(img.data);
