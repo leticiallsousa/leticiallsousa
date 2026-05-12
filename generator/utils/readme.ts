@@ -27,7 +27,7 @@ export async function generateReadmeMarkdownFile({
 	const getImagePieceSrc = (
 		{ filepath, imgSrc, theme }: ImagePiece & { theme: 'light' | 'dark' },
 	) =>
-		`https://leonsilicon.github.io/leonsilicon/generator/generated/${
+		`https://leticiallsousa.github.io/leticiallsousa/generator/generated/${
 			imgSrc === undefined ?
 				path.basename(filepath) :
 				imgSrc.replace(
