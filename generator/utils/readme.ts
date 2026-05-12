@@ -54,7 +54,7 @@ export async function generateReadmeMarkdownFile({
 
 	const readme = zip(lightModeImagePieces, darkModeImagePieces).map(
 		([lightModeImagePiece, darkModeImagePiece]) => {
-			const { href } = lightModeImagePiece;
+			const { href, newTab } = lightModeImagePiece;
 			const imgWidth = getImgWidth(lightModeImagePiece.width);
 			const lightModeImgSrc = getImagePieceSrc({
 				...lightModeImagePiece,
