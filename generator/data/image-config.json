@@ -1,0 +1,60 @@
+{
+	"rows": [
+		{
+			"bottomY": 39,
+			"links": [
+				{
+					"leftX": 96,
+					"rightX": 224,
+					"href": "https://github.com/leticiallsousa"
+				},
+				{
+					"leftX": 224,
+					"rightX": 366,
+					"href": "https://linkedin.com/in/leticiallsousa"
+				},
+				{
+					"leftX": 850,
+					"rightX": 880,
+					"href": "https://github.com/leticiallsousa"
+				}
+			]
+		},
+		{
+			"bottomY": 79,
+			"links": [
+				{
+					"leftX": 75,
+					"rightX": 93,
+					"href": "https://github.com/leticiallsousa"
+				},
+				{
+					"leftX": 150,
+					"rightX": 880,
+					"href": "https://github.com/leticiallsousa"
+				}
+			]
+		},
+		{
+			"bottomY": 295,
+			"links": [
+				{
+					"leftX": 139,
+					"rightX": 386,
+					"href": "https://github.com/leticiallsousa/leticiallsousa/blob/main/README.md#leticiallsousa"
+				}
+			]
+		},
+		{
+			"bottomY": 438,
+			"links": [
+				{
+					"leftX": 138,
+					"rightX": 491,
+					"href": "https://github.com/leticiallsousa/leticiallsousa/blob/main/README.md#leticiallsousa",
+					"imgSrc": "${README_MD_SRC}"
+				}
+			]
+		}
+	]
+}
