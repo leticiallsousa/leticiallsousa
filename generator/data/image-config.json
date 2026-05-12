@@ -6,17 +6,20 @@
 				{
 					"leftX": 91,
 					"rightX": 214,
-					"href": "https://github.com/leticiallsousa"
+					"href": "https://github.com/leticiallsousa",
+					"newTab": false
 				},
 				{
 					"leftX": 214,
 					"rightX": 346,
-					"href": "https://linkedin.com/in/leticiallsousa"
+					"href": "https://linkedin.com/in/leticiallsousa",
+					"newTab": true
 				},
 				{
 					"leftX": 812,
 					"rightX": 840,
-					"href": "https://github.com/leticiallsousa"
+					"href": "https://github.com/leticiallsousa",
+					"newTab": false
 				}
 			]
 		},
@@ -26,12 +29,14 @@
 				{
 					"leftX": 75,
 					"rightX": 88,
-					"href": "https://github.com/leticiallsousa"
+					"href": "https://github.com/leticiallsousa",
+					"newTab": false
 				},
 				{
 					"leftX": 137,
 					"rightX": 840,
-					"href": "https://github.com/leticiallsousa"
+					"href": "https://github.com/leticiallsousa",
+					"newTab": false
 				}
 			]
 		},
@@ -41,7 +46,8 @@
 				{
 					"leftX": 139,
 					"rightX": 380,
-					"href": "https://github.com/leticiallsousa/leticiallsousa/blob/main/README.md#leticiallsousa"
+					"href": "https://github.com/leticiallsousa/leticiallsousa/blob/main/README.md#leticiallsousa",
+					"newTab": true
 				}
 			]
 		},
@@ -52,7 +58,8 @@
 					"leftX": 140,
 					"rightX": 490,
 					"href": "https://github.com/leticiallsousa/leticiallsousa/blob/main/README.md#leticiallsousa",
-					"imgSrc": "${README_MD_SRC}"
+					"imgSrc": "${README_MD_SRC}",
+					"newTab": true
 				}
 			]
 		}

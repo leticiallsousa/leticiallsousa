@@ -71,7 +71,7 @@ export async function generateReadmeMarkdownFile({
 
 			const markdown = href === null ?
 				pictureHtml :
-				`<a href="${href}">${pictureHtml}</a>`;
+				`<a href="${href}" ${newTab ? 'target="_blank"' : ''}>${pictureHtml}</a>`;
 
 			return markdown;
 		},
