@@ -29,6 +29,7 @@ export async function generateImagePieces(
 		width: number;
 		height: number;
 		href: string | null;
+		newTab: boolean;
 		imgSrc: string | undefined;
 	}[] = [];
 
@@ -36,7 +37,7 @@ export async function generateImagePieces(
 		let currentX = 0;
 
 		for (const link of row.links) {
-			const { leftX, rightX, href: unparsedHref, imgSrc } = link;
+			const { leftX, rightX, href: unparsedHref, imgSrc, newTab } = link;
 
 			// If this image link is not directly next to the previous image link,
 			// we need to crop the image inbetween and create a non-link image
@@ -47,7 +48,8 @@ export async function generateImagePieces(
 					width: leftX - currentX,
 					height: row.bottomY - currentY,
 					href: null,
-					imgSrc: undefined,
+					newTab: false,
+					imgSrc: undefined
 				});
 			}
 
@@ -58,6 +60,7 @@ export async function generateImagePieces(
 				height: row.bottomY - currentY,
 				href: unparsedHref, // Mantém o valor original do href sem substituição
 				imgSrc,
+				newTab
 			});
 
 			currentX = rightX;
@@ -69,6 +72,7 @@ export async function generateImagePieces(
 				top: currentY,
 				width: imageWidth - currentX,
 				height: row.bottomY - currentY,
+				newTab: false,
 				href: null,
 				imgSrc: undefined,
 			});
@@ -79,7 +83,7 @@ export async function generateImagePieces(
 
 	const imagePieces: ImagePiece[] = await Promise.all(
 		crops.map(async (crop) => {
-			const { href, ...dimensions } = crop;
+			const { href, newTab, imgSrc, ...dimensions } = crop;
 			const buffer = await image.clone().extract(dimensions).toFormat('png')
 				.toBuffer();
 			const bufferHash = await hash(buffer);
@@ -93,6 +97,7 @@ export async function generateImagePieces(
 			return {
 				filepath,
 				href,
+				newTab,
 				width: dimensions.width,
 				height: dimensions.height,
 				imgSrc: crop.imgSrc,

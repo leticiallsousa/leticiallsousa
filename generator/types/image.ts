@@ -2,6 +2,7 @@ export interface ImagePiece {
 	filepath: string;
 	height: number;
 	href: string | null;
+	newTab: boolean;
 	width: number;
 	imgSrc?: string;
 }

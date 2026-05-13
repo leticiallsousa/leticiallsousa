@@ -2,43 +2,24 @@ import type { ImagePiece } from '#types';
 import { hash } from 'hasha';
 import zip from 'just-zip-it';
 import fs from 'node:fs';
-import os from 'node:os';
 import { outdent } from 'outdent';
 import path from 'pathe';
 import sharp from 'sharp';
 import { monorepoDirpath } from './paths.ts';
-import { convert2img } from 'mdimg';
 
 export async function generateReadmeMarkdownFile({
 	imageWidth,
 	darkModeImagePieces,
-	lightModeImagePieces,
-	lightModeReadmeMdImageFilepath,
-	darkModeReadmeMdImageFilepath,
+	lightModeImagePieces
 }: {
 	imageWidth: number;
 	darkModeImagePieces: ImagePiece[];
 	lightModeImagePieces: ImagePiece[];
-	lightModeReadmeMdImageFilepath: string;
-	darkModeReadmeMdImageFilepath: string;
 }) {
 	// We use GitHub pages to host our static images since it seems like that's more
 	// reliable compared to using `raw.githubusercontent.com` URLs.
-	const getImagePieceSrc = (
-		{ filepath, imgSrc, theme }: ImagePiece & { theme: 'light' | 'dark' },
-	) =>
-		`https://leticiallsousa.github.io/leticiallsousa/generator/generated/${
-			imgSrc === undefined ?
-				path.basename(filepath) :
-				imgSrc.replace(
-					'${README_MD_SRC}',
-					path.basename(
-						theme === 'light' ?
-							lightModeReadmeMdImageFilepath :
-							darkModeReadmeMdImageFilepath,
-					),
-				)
-		}`;
+	const getImagePieceSrc = ({ filepath }: ImagePiece) =>
+    `https://leticiallsousa.github.io/leticiallsousa/generator/generated/${path.basename(filepath)}`;
 
 	const getImgWidth = (width: number) => `${(width / imageWidth) * 100}%`;
 
@@ -81,53 +62,4 @@ export async function generateReadmeMarkdownFile({
 		path.join(monorepoDirpath, '../readme.markdown'),
 		readme,
 	);
-}
-
-export async function convertReadmeMdToImage({
-	imageWidth,
-	imageHeight,
-	theme,
-}: {
-	imageWidth: number;
-	imageHeight: number;
-	theme: 'light' | 'dark';
-}) {
-const img = await convert2img({
-    mdFile: path.join(monorepoDirpath, '../README.md'),
-    outputFilename: await os.tmpdir(),
-    width: imageWidth,
-    height: imageHeight,
-    cssTemplate: theme === 'light' ? 'light.css' : 'dark.css',
-    extensions: true, // Ajusta para um valor booleano compatível com IExtensionOptions
-});
-
-	const imgHash = await hash(img.data);
-	const image = sharp(img.data);
-	const { width, height } = await image.metadata();
-	if (!width || !height) {
-		throw new Error('Could not get image dimensions');
-	}
-
-	const readmeMdImageFilepath = path.join(
-		monorepoDirpath,
-		`generated/readme-${theme}.${imgHash}.png`,
-	);
-
-	await image
-		.resize(369, 230)
-		.extract({
-			left: 1,
-			top: 1,
-			width: 369 - 2,
-			height: 230 - 2,
-		})
-		.extend({
-			top: 1,
-			bottom: 1,
-			left: 1,
-			right: 1,
-			background: theme === 'light' ? '#000000' : '#EEEEEE',
-		}).toFile(readmeMdImageFilepath);
-
-	return readmeMdImageFilepath;
 }

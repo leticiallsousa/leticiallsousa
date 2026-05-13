@@ -41,24 +41,12 @@
 			]
 		},
 		{
-			"bottomY": 295,
+			"bottomY": 275,
 			"links": [
 				{
 					"leftX": 139,
 					"rightX": 380,
 					"href": "https://github.com/leticiallsousa/leticiallsousa/blob/main/README.md#leticiallsousa",
-					"newTab": true
-				}
-			]
-		},
-		{
-			"bottomY": 503,
-			"links": [
-				{
-					"leftX": 140,
-					"rightX": 490,
-					"href": "https://github.com/leticiallsousa/leticiallsousa/blob/main/README.md#leticiallsousa",
-					"imgSrc": "${README_MD_SRC}",
 					"newTab": true
 				}
 			]

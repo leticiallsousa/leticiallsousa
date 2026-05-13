@@ -5,10 +5,7 @@ import path from 'pathe';
 import sharp from 'sharp';
 import { generateImagePieces } from '../utils/image.ts';
 import { monorepoDirpath } from '../utils/paths.ts';
-import {
-	convertReadmeMdToImage,
-	generateReadmeMarkdownFile,
-} from '../utils/readme.ts';
+import { generateReadmeMarkdownFile } from '../utils/readme.ts';
 
 const lightModeImageFilepath = path.join(
 	monorepoDirpath,
@@ -31,14 +28,10 @@ const spinner = ora('Generating README images...').start();
 const [
 	lightModeImagePieces,
 	darkModeImagePieces,
-	lightModeReadmeMdImageFilepath,
-	darkModeReadmeMdImageFilepath,
 ] = await Promise
 	.all([
 		generateImagePieces({ imageFilepath: lightModeImageFilepath }),
 		generateImagePieces({ imageFilepath: darkModeImageFilepath }),
-		convertReadmeMdToImage({ imageWidth, imageHeight, theme: 'light' }),
-		convertReadmeMdToImage({ imageWidth, imageHeight, theme: 'dark' }),
 	]);
 
 spinner.text = 'Generating README...';
@@ -47,8 +40,6 @@ await generateReadmeMarkdownFile({
 	lightModeImagePieces,
 	darkModeImagePieces,
 	imageWidth,
-	lightModeReadmeMdImageFilepath,
-	darkModeReadmeMdImageFilepath,
 });
 
 spinner.succeed('README generated!');
