@@ -18,8 +18,9 @@ export async function generateReadmeMarkdownFile({
 }) {
 	// We use GitHub pages to host our static images since it seems like that's more
 	// reliable compared to using `raw.githubusercontent.com` URLs.
-	const getImagePieceSrc = ({ filepath }: ImagePiece) =>
-    `https://leticiallsousa.github.io/leticiallsousa/generator/generated/${path.basename(filepath)}`;
+	const getImagePieceSrc = (
+    { filepath, theme }: ImagePiece & { theme: 'light' | 'dark' },) =>
+		`https://leticiallsousa.github.io/leticiallsousa/generator/generated/${path.basename(filepath)}`;
 
 	const getImgWidth = (width: number) => `${(width / imageWidth) * 100}%`;
 

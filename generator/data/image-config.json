@@ -50,6 +50,10 @@
 					"newTab": true
 				}
 			]
+		},
+		{
+			"bottomY": 630,
+			"links": []
 		}
 	]
 }
