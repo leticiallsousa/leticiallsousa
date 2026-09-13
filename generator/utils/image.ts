@@ -37,7 +37,7 @@ export async function generateImagePieces(
 		let currentX = 0;
 
 		for (const link of row.links) {
-			const { leftX, rightX, href: unparsedHref, imgSrc, newTab } = link;
+			const { leftX, rightX, href: unparsedHref, imgSrc, newTab } = link as typeof link & { imgSrc?: string };
 
 			// If this image link is not directly next to the previous image link,
 			// we need to crop the image inbetween and create a non-link image
